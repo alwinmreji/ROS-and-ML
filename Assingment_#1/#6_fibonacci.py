@@ -1,13 +1,25 @@
 ########################################################
-#Factorial of a number
+#Fibonacci number count
 
 a = int(input("Enter the decimal number:\t"))
-mul = 1
-for i in range(1,a+1):
-    mul*= i
-print("Factorial of ",a,"is",mul)
+f,s = 1,0
+print("The Fibonacci numbers are:\n")
+while(a):
+    s+=f
+    f = s-f
+    a-=1
+    print(f)
 
 #OUTPUT:
-# Enter the decimal number:	5
-# Factorial of  5 is 120
-
+# Enter the decimal number:	10
+#The Fibonacci numbers are:
+# 0
+# 1
+# 1
+# 2
+# 3
+# 5
+# 8
+# 13
+# 21
+# 34
